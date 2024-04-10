@@ -59,6 +59,6 @@ email_message.attach_alternative(html_content, "text/html")
 email_message.send()
 ```
 
-And a complete HTML email will be output, which should render correctly across email clients:
+This will produce a complete HTML email that renders consistently across email clients:
 
 ![Rendered HTML email example](https://raw.githubusercontent.com/jhthompson/django-bootstrap-email/main/example.png)
