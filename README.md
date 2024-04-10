@@ -39,4 +39,4 @@ INSTALLED_APPS = [
 
 And a complete HTML email will be output, which should render correctly across email clients:
 
-![Rendered HTML email example](example.png)
+![Rendered HTML email example](https://raw.githubusercontent.com/jhthompson/django-bootstrap-email/main/example.png)
