@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Use `NodeList.render()` instead of iterating over list to make individual `Node.render()` calls
+
 ## [0.2.1] - 2024-04-10
 
 ### Fixed

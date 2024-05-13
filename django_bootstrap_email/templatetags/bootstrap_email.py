@@ -16,6 +16,6 @@ class BootstrapEmailNode(template.Node):
         self.children = children
 
     def render(self, context):
-        html = "".join([node.render(context) for node in self.children])
+        html = self.children.render(context)
         result = compile(html)
         return result
