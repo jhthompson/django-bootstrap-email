@@ -17,7 +17,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-3. Use the bootstrap_email template tag in your Django template
+3. Use the `bootstrap_email` template tag in your Django template
 
 ```html
 {% load bootstrap_email %}
@@ -44,13 +44,12 @@ context = {
     "message": "Hello World!",
 }
 
-subject = "Greeting"
 # you should always include a plain text version of the HTML email
-text_content = render_to_string("path/to/template.txt", context)
+text_content = context["message"]
 html_content = render_to_string("path/to/template.html", context)
 
 email_message = EmailMultiAlternatives(
-    subject=subject,
+    subject="Greetings",
     body=text_content,
     from_email="me@test.com",
     to=["you@test.com"],
